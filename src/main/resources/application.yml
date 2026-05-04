@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: local
+  jpa:
+    open-in-view: false
+
+jwt:
+  # Base64-encoded secret key (min 32 bytes decoded for HS256)
+  # 운영 환경에서는 반드시 환경 변수 JWT_SECRET 으로 교체하세요
+  secret: ${JWT_SECRET:bXktc3VwZXItc2VjcmV0LWtleS1mb3ItYm9pbGVycGxhdGUtZGV2LW9ubHkh}
+  access-token-expiration: 900000       # 15분 (ms)
+  refresh-token-expiration: 604800000   # 7일 (ms)
