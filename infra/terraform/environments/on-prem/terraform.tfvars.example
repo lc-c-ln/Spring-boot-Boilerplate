@@ -1,0 +1,25 @@
+project_name = "boilerplate"
+
+# 배포 대상 서버 IP 목록
+server_ips = ["192.168.1.10", "192.168.1.11"]
+
+# SSH
+ssh_user             = "ubuntu"
+ssh_private_key_path = "~/.ssh/id_rsa"
+ssh_port             = 22
+
+# AWS ECR (aws env output 값 복사)
+ecr_repository_url = "123456789012.dkr.ecr.ap-northeast-2.amazonaws.com/boilerplate/app"
+aws_region         = "ap-northeast-2"
+image_tag          = "latest"
+
+# App
+app_port = 8080
+
+# Database
+db_name     = "boilerplate"
+db_username = "boilerplate"
+db_password = "CHANGE_ME_STRONG_PASSWORD"
+
+# JWT (application.yml 과 동일한 키)
+jwt_secret = "CHANGE_ME_BASE64_ENCODED_32BYTE_KEY"

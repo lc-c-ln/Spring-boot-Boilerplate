@@ -1,0 +1,19 @@
+project_name = "boilerplate"
+aws_region   = "ap-northeast-2"
+
+availability_zones = ["ap-northeast-2a", "ap-northeast-2c"]
+vpc_cidr           = "10.0.0.0/16"
+
+# RDS
+db_name            = "boilerplate"
+db_username        = "boilerplate"
+db_password        = "CHANGE_ME_STRONG_PASSWORD"
+rds_instance_class = "db.t3.micro"
+
+# App
+image_tag     = "latest"
+jwt_secret    = "CHANGE_ME_BASE64_ENCODED_32BYTE_KEY"
+task_cpu      = "512"
+task_memory   = "1024"
+desired_count = 1
+max_capacity  = 4
